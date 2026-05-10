@@ -4,7 +4,6 @@
     --text-muted: #6b7280;
     --bg-white: #ffffff;
     --grid-color: rgba(229, 231, 235, 0.5);
-    --orange-gradient: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
     --purple-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
     --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
