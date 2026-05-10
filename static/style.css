@@ -18,9 +18,10 @@
 body {
     font-family: var(--font-inter);
     color: var(--text-main);
-    background-color: var(--bg-white);
+    background: linear-gradient(to right, #ffffff 0%, #f9fafb 50%, #ffffff 100%);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
 }
 
 .container {
@@ -41,6 +42,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     z-index: 1000;
+    border-bottom: 1px solid #111827; /* Dark line after navbar */
 }
 
 .nav-container {
@@ -198,7 +200,7 @@ body {
 /* How it works section */
 .how-it-works {
     padding: 100px 0;
-    background: white;
+    background: transparent;
 }
 
 .section-title {
@@ -266,7 +268,7 @@ body {
 /* Pricing Section */
 .pricing {
     padding: 100px 0 40px;
-    background: #f9fafb;
+    background: transparent;
 }
 
 .pricing-grid {
@@ -431,7 +433,7 @@ body {
 .final-cta {
     padding: 40px 0 80px;
     text-align: center;
-    background: #f9fafb;
+    background: transparent;
 }
 
 .final-cta-title {
