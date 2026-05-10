@@ -18,7 +18,8 @@
 body {
     font-family: var(--font-inter);
     color: var(--text-main);
-    background: linear-gradient(to right, #ffffff 0%, #f9fafb 50%, #ffffff 100%);
+    /* Symmetric gradient: Right to Left feel with light center */
+    background: linear-gradient(to right, #f9fafb 0%, #ffffff 50%, #f9fafb 100%);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
@@ -42,7 +43,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     z-index: 1000;
-    border-bottom: 1px solid #e5e7eb; /* Lightened navbar line as requested */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Even less visible navbar line */
 }
 
 .nav-container {
@@ -151,7 +152,7 @@ body {
 }
 
 .small-highlight {
-    font-size: 3.5rem; /* Smaller size for the payment highlight */
+    font-size: 3.5rem;
     vertical-align: middle;
 }
 
