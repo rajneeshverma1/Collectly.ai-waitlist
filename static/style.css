@@ -447,24 +447,24 @@ body {
 
 /* Final CTA Section */
 .final-cta {
-    padding: 120px 0;
+    padding: 80px 0;
     text-align: center;
     background: #f9fafb;
 }
 
 .final-cta-title {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 800;
-    max-width: 800px;
-    margin: 0 auto 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 1.25rem;
     line-height: 1.2;
     letter-spacing: -0.04em;
 }
 
 .final-cta-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-muted);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .final-cta-actions {
