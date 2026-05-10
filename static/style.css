@@ -42,7 +42,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     z-index: 1000;
-    border-bottom: 1px solid #111827; /* Dark line after navbar */
+    border-bottom: 1px solid #e5e7eb; /* Lightened navbar line as requested */
 }
 
 .nav-container {
@@ -148,6 +148,11 @@ body {
 
 .highlight.purple {
     background: var(--purple-gradient);
+}
+
+.small-highlight {
+    font-size: 3.5rem; /* Smaller size for the payment highlight */
+    vertical-align: middle;
 }
 
 .hero-subtitle {
@@ -488,6 +493,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-title { font-size: 2.5rem; line-height: 1.3; }
+    .small-highlight { font-size: 2rem; }
     .nav { display: none; }
     .hero-cta { flex-direction: column; width: 100%; gap: 1rem; }
     .btn-cta-primary { justify-content: center; width: 100%; }
