@@ -223,8 +223,15 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 .steps {
@@ -274,29 +281,179 @@ body {
     line-height: 1.6;
 }
 
+/* Pricing Section */
+.pricing {
+    padding: 100px 0;
+    background: #f9fafb;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-blue);
+    box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.1);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-blue);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tier-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.tier-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    min-height: 3rem;
+}
+
+.btn-tier-primary {
+    display: block;
+    text-align: center;
+    background: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: background 0.2s;
+}
+
+.btn-tier-secondary {
+    display: block;
+    text-align: center;
+    background: white;
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border: 1px solid #e5e7eb;
+    transition: border-color 0.2s;
+}
+
+.btn-tier-primary:hover { background: #1d4ed8; }
+.btn-tier-secondary:hover { border-color: #d1d5db; }
+
+.features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.feature {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.feature::before {
+    content: "✓";
+    color: #10b981;
+    font-weight: 800;
+}
+
+/* Enterprise Footer */
+.enterprise-footer {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enterprise-text h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.enterprise-text p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.btn-enterprise {
+    background: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 @media (max-width: 1024px) {
-    .hero-title {
-        font-size: 3.5rem;
-    }
+    .hero-title { font-size: 3.5rem; }
 }
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    .nav {
-        display: none;
-    }
-    .hero-cta {
-        flex-direction: column;
-        width: 100%;
-    }
-    .btn-cta-primary {
-        justify-content: center;
-        width: 100%;
-    }
-    .step {
-        flex-direction: column;
-        gap: 1rem;
-    }
+    .hero-title { font-size: 2.5rem; }
+    .nav { display: none; }
+    .hero-cta { flex-direction: column; width: 100%; }
+    .btn-cta-primary { justify-content: center; width: 100%; }
+    .step { flex-direction: column; gap: 1rem; }
+    .enterprise-footer { flex-direction: column; text-align: center; }
 }
