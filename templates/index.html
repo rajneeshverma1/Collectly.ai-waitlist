@@ -7,7 +7,7 @@
     <meta name="description" content="KodHau MCP injects the tribal knowledge of your team: architecture, design decisions, constraints, and more into your AI agents.">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header class="header">
@@ -58,21 +58,24 @@
                 </div>
 
                 <div class="hero-cta">
-                    <a href="#" class="btn-cta-primary">
-                        Get started free <span class="shortcut">⌘ S</span>
-                    </a>
+                    <form id="waitlist-form" class="cta-form">
+                        <input type="email" name="email" placeholder="Enter your work email" required class="cta-input">
+                        <button type="submit" class="btn-cta-primary">
+                            Get started free <span class="shortcut">⌘ S</span>
+                        </button>
+                    </form>
                     <a href="#" class="btn-cta-secondary">
                         Book a demo <span class="shortcut">⌘ D</span>
                     </a>
                 </div>
 
                 <div class="hero-preview">
-                    <img src="preview.png" alt="KodHau AI Agent Preview" class="preview-img">
+                    <img src="/static/preview.png" alt="KodHau AI Agent Preview" class="preview-img">
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
