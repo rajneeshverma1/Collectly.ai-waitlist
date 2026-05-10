@@ -3,7 +3,7 @@
     --text-main: #111827;
     --text-muted: #6b7280;
     --bg-white: #ffffff;
-    --grid-color: rgba(229, 231, 235, 0.5);
+    --grid-color: rgba(209, 213, 219, 0.3);
     --orange-gradient: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
     --purple-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
     --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -126,9 +126,9 @@ body {
     background-image: 
         linear-gradient(var(--grid-color) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-size: 20px 20px;
     z-index: -1;
-    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    mask-image: radial-gradient(circle at center, black, transparent 70%);
 }
 
 .hero-container {
@@ -194,65 +194,6 @@ body {
 
 .badge-logo {
     height: 20px;
-}
-
-.ph-badge {
-    padding: 0.5rem 1rem;
-    border-color: #ff6154;
-    color: #ff6154;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.ph-logo {
-    background: #ff6154;
-    color: white;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 800;
-    font-size: 0.75rem;
-}
-
-.ph-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1;
-}
-
-.ph-label {
-    font-size: 0.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.ph-name {
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-.ph-vote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-left: 1px solid #ff6154;
-    padding-left: 0.75rem;
-    margin-left: 0.5rem;
-}
-
-.upvote-arrow {
-    font-size: 0.6rem;
-}
-
-.vote-count {
-    font-weight: 700;
-    font-size: 0.85rem;
 }
 
 /* CTA Section & Form */
